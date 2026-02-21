@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principles | Kristian Arvidsson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #e5e5e5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+
+        .principles {
+            list-style: none;
+        }
+
+        .principles li {
+            font-size: 1.25rem;
+            font-weight: 300;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid #1a1a1a;
+            transition: color 0.2s ease;
+        }
+
+        .principles li:last-child {
+            border-bottom: none;
+        }
+
+        .principles li:hover {
+            color: #fff;
+        }
+
+        .principles li::before {
+            content: "—";
+            margin-right: 1rem;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #444;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: #888;
+        }
+
+        @media (max-width: 480px) {
+            .principles li {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Principles</h1>
+        </header>
+
+        <ul class="principles">
+            <li>If you give up today it's easier to give up tomorrow</li>
+            <li>If you bring a brick every time you climb that hill, soon it will stand a house on that hill</li>
+            <li>It doesn't get easier, you just go faster</li>
+            <li>Keep no relics, they slow you down</li>
+            <li>Deal with the mess</li>
+            <li>Keep it simple stupid</li>
+            <li>Navigate the gray zone</li>
+            <li>Make yourself redundant at any cost</li>
+            <li>The ride starts on time, no exceptions</li>
+        </ul>
+
+        <footer>
+            <a href="https://github.com/arvidsson-geins">@arvidsson-geins</a>
+        </footer>
+    </div>
+</body>
+</html>
